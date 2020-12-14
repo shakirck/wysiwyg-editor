@@ -6,7 +6,7 @@ import { InlineMath, BlockMath } from "react-katex";
 import math from "remark-math";
 import mermaid from "remark-mermaid";
 import breaks from "remark-breaks";
-import graphviz from "remark-graphviz";
+import smartypants from "@silvenon/remark-smartypants";
 import plantUml from "@akebifiky/remark-simple-plantuml";
 import "katex/dist/katex.min.css"; // `react-katex` does not import the CSS for you
 export const Preview = ({ state }) => {
@@ -19,7 +19,7 @@ export const Preview = ({ state }) => {
   return (
     <ReactMarkdown
       className="preview-container container"
-      plugins={[gfm, math, mermaid, breaks, plantUml]}
+      plugins={[gfm, math, mermaid, breaks, plantUml, smartypants]}
       renderers={renderers}
     >
       {state}

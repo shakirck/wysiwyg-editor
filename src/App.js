@@ -6,10 +6,12 @@ import { Navbar } from "./components/Navbar";
 import { Preview } from "./components/Preview";
 
 function App() {
+  const [state, setstate] = useState("");
+
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+      <Navbar state={state} setstate={setstate} />
+      <Home state={state} setstate={setstate} />
     </div>
   );
 }

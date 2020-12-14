@@ -23,7 +23,7 @@ export const Editor = ({ setstate, state }) => {
     setstate(textarr);
   };
   return (
-    <div
+    <pre
       className="editor-container container"
       contentEditable={true}
       onInput={(e) => handleEditorInput(e)}
@@ -33,6 +33,6 @@ export const Editor = ({ setstate, state }) => {
         handlePaste(e);
       }}
       defaultValue={defaultValue}
-    ></div>
+    ></pre>
   );
 };
