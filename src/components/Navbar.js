@@ -21,7 +21,6 @@ export const Navbar = ({ state, setstate }) => {
     const div = document.createElement("div");
     const br = document.createElement("br");
     let parent;
-    // console.log(span, div, br);
     let newcontent;
     switch (command) {
       case "*":
@@ -35,7 +34,6 @@ export const Navbar = ({ state, setstate }) => {
         break;
 
       case "#":
-        // div.append(br);
         newcontent = command + " " + oldContent + "\n";
         span.append(newcontent);
         div.append(span);
@@ -44,7 +42,6 @@ export const Navbar = ({ state, setstate }) => {
         break;
       case "-":
       case "1.":
-        // div.append(br);
         newcontent = command + " " + oldContent + "\n";
         span.append(newcontent);
         div.append(span);
