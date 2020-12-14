@@ -1,4 +1,4 @@
-import React, { createElement } from "react";
+import React from "react";
 import BoldIcon from "../svg/bold.svg";
 import ItalicIcon from "../svg/italic.svg";
 import headingIcon from "../svg/capitals.svg";
@@ -60,25 +60,25 @@ export const Navbar = ({ state, setstate }) => {
   return (
     <div className="Navbar navbar-container">
       <button onClick={(e) => handleControlls(e)} data-command="**">
-        <img src={BoldIcon} />
+        <img src={BoldIcon} alt="bold" />
       </button>
 
       <button onClick={(e) => handleControlls(e)} data-command="*">
-        <img src={ItalicIcon} />
+        <img src={ItalicIcon} alt="italic" />
       </button>
 
       <button onClick={(e) => handleControlls(e)} data-command="#">
-        <img src={headingIcon} />
+        <img src={headingIcon} alt="heading" />
       </button>
 
       <button onClick={(e) => handleControlls(e)} data-command="~~">
-        <img src={strikethrough} />
+        <img src={strikethrough} alt="strike-through" />
       </button>
       <button onClick={(e) => handleControlls(e)} data-command="-">
-        <img src={ulIcon} />
+        <img src={ulIcon} alt="ul" />
       </button>
       <button onClick={(e) => handleControlls(e)} data-command="1.">
-        <img src={olIcon} />
+        <img src={olIcon} alt="ol" />
       </button>
     </div>
   );
