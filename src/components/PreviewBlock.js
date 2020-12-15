@@ -2,7 +2,7 @@ import React from "react";
 import marked from "marked";
 import showdown from "showdown";
 // showdown.setFlavor("github");
-export const PreviewBlock = ({ block }) => {
+export const PreviewBlock = ({ markdown }) => {
   const showdownOption = {
     parseImgDimensions: true,
     simplifiedAutoLink: true,
@@ -21,7 +21,9 @@ export const PreviewBlock = ({ block }) => {
     const converter = new showdown.Converter(showdownOption);
     var thisConverterSpecificOptions = converter.getOptions();
     console.log("options ", thisConverterSpecificOptions);
-    const markup = converter.makeHtml(block.text);
+    // console.log(markdown, "markdown");
+    // debugger;
+    const markup = converter.makeHtml(markdown);
     return { __html: markup };
   };
 

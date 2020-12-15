@@ -6,7 +6,7 @@ export const EditorContextProvider = ({ children }) => {
   const [editorState, setEditorState] = useState(() =>
     EditorState.createEmpty()
   );
-  const [rawData, setrawData] = useState({});
+  const [rawData, setrawData] = useState();
   return (
     <EditorContext.Provider value={[editorState, setEditorState]}>
       <rawDataContext.Provider value={[rawData, setrawData]}>
