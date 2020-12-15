@@ -24,6 +24,7 @@
     "remark-graphviz": "^0.2.2",
     "remark-math": "^4.0.0",
     "remark-mermaid": "^0.2.0",
+    "showdown": "^1.9.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
