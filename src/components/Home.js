@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Editor } from "./Editor";
+import { DraftEditor } from "./DraftEditor";
 import { Preview } from "./Preview";
-export const Home = ({ state, setstate }) => {
+export const Home = () => {
   return (
     <div className="Home">
-      <Editor state={state} setstate={setstate} />
-      <Preview state={state} setstate={setstate} />
+      <DraftEditor />
+      <Preview />
     </div>
   );
 };
