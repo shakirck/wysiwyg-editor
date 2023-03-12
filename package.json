@@ -39,6 +39,7 @@
     "web-vitals": "^3.3.0"
   },
   "devDependencies": {
-    "markdown-loader": "^8.0.0"
+    "markdown-loader": "^8.0.0",
+    "raw-loader": "^4.0.2"
   }
 }

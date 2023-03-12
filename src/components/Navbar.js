@@ -75,7 +75,7 @@ export const Navbar = ({ state, setstate }) => {
         <Image width={100} height={25} src={ulIcon} alt="ul" />
       </button>
       <button onClick={(e) => handleControlls(e)} data-command="1.">
-        <image width={100} height={25} src={olIcon} alt="ol" />
+        <Image width={100} height={25} src={olIcon} alt="ol" />
       </button>
     </div>
   );

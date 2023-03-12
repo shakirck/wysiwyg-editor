@@ -8,7 +8,7 @@ import smartypants from "@silvenon/remark-smartypants";
 import plantUml from "@akebifiky/remark-simple-plantuml";
 import "katex/dist/katex.min.css"; // `react-katex` does not import the CSS for you
 export const Preview = ({ state, setstate }) => {
-  const renderers = {
+  const components = {
     inlineMath: ({ value }) => <InlineMath math={value} />,
     math: ({ value }) => <BlockMath math={value} />,
   };
@@ -17,7 +17,7 @@ export const Preview = ({ state, setstate }) => {
     <ReactMarkdown
       className="preview-container container"
       remarkPlugins={[gfm, math, plantUml, smartypants]}
-      renderers={renderers}
+      components={components}
     >
       {state}
     </ReactMarkdown>

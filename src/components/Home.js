@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Editor } from "./Editor";
 import { Preview } from "./Preview";
 export const HomeComponent = ({ state, setstate }) => {
