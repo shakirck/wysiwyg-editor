@@ -16,7 +16,7 @@ export const Preview = ({ state, setstate }) => {
   return (
     <ReactMarkdown
       className="preview-container container"
-      plugins={[gfm, math, plantUml, smartypants]}
+      remarkPlugins={[gfm, math, plantUml, smartypants]}
       renderers={renderers}
     >
       {state}

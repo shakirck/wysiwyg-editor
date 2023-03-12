@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Editor } from "./Editor";
 import { Preview } from "./Preview";
-export const Home = ({ state, setstate }) => {
+export const HomeComponent = ({ state, setstate }) => {
   return (
     <div className="Home">
       <Editor state={state} setstate={setstate} />

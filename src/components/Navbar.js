@@ -1,10 +1,10 @@
-import React from "react";
-import BoldIcon from "../svg/bold.svg";
-import ItalicIcon from "../svg/italic.svg";
-import headingIcon from "../svg/capitals.svg";
-import strikethrough from "../svg/strikethrough.svg";
-import ulIcon from "../svg/list-2.svg";
-import olIcon from "../svg/list.svg";
+import Image from "next/image";
+const BoldIcon  =  "bold.svg";
+const ItalicIcon  =  "italic.svg";
+const headingIcon  =  "capitals.svg";
+const strikethrough  =  "strikethrough.svg";
+const ulIcon  =  "list-2.svg";
+const olIcon  =  "list.svg";
 export const Navbar = ({ state, setstate }) => {
   const handleControlls = (e) => {
     let range = window.getSelection().getRangeAt(0);
@@ -57,25 +57,25 @@ export const Navbar = ({ state, setstate }) => {
   return (
     <div className="Navbar navbar-container">
       <button onClick={(e) => handleControlls(e)} data-command="**">
-        <img src={BoldIcon} alt="bold" />
+        <Image width={100} height={25} src={BoldIcon} alt="bold" />
       </button>
 
       <button onClick={(e) => handleControlls(e)} data-command="*">
-        <img src={ItalicIcon} alt="italic" />
+        <Image width={100} height={25} src={ItalicIcon} alt="italic" />
       </button>
 
       <button onClick={(e) => handleControlls(e)} data-command="#">
-        <img src={headingIcon} alt="heading" />
+        <Image width={100} height={25} src={headingIcon} alt="heading" />
       </button>
 
       <button onClick={(e) => handleControlls(e)} data-command="~~">
-        <img src={strikethrough} alt="strike-through" />
+        <Image width={100} height={25} src={strikethrough} alt="strike-through" />
       </button>
       <button onClick={(e) => handleControlls(e)} data-command="-">
-        <img src={ulIcon} alt="ul" />
+        <Image width={100} height={25} src={ulIcon} alt="ul" />
       </button>
       <button onClick={(e) => handleControlls(e)} data-command="1.">
-        <img src={olIcon} alt="ol" />
+        <image width={100} height={25} src={olIcon} alt="ol" />
       </button>
     </div>
   );
